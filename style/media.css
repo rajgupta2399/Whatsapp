@@ -1,0 +1,293 @@
+  /* MEDIA QUERIES */
+  @media (max-width: 650px) {
+
+    /* body{
+        border: 2px solid red;
+    } */
+
+    .nav {
+      position: fixed;
+      top: 90px;
+      left: -100%;
+      transform: translateX(-50%);
+      background-color: #fff;
+      width: 100%;
+      padding: 10px 0 25px;
+    }
+
+    .logo__img {
+        height: 26px;
+      }
+  
+    .nav__list {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 20px;
+    }
+  
+    .nav__link {
+      font-size: 14px;
+    }
+  
+    .btn {
+      font-size: 11px;
+      padding: 7px 17px;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+
+    .bottom-bar__content {
+        padding: 10px 30px ;
+      }
+
+
+    .heading-form
+    {
+    padding: 10vw 7vw 20vw 7vw;
+    }
+
+    .heading-form .heading-form-div
+{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+    gap: 50px;
+}
+
+.heading-form .heading-form-div .heading-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.heading-form .heading-form-div .heading-div h1{
+    font-size: 25px;
+    line-height: 25px;
+    /* text-align: center; */
+}
+
+.heading-form .heading-form-div .heading-div h2
+{
+    font-size: 18px;
+    line-height: 18px;
+    /* text-align: center; */
+}
+
+.heading-form .heading-form-div .heading-div h3{
+    color: #43cd66;
+    font-size: 17px;
+    /* text-align: center; */
+}
+
+.heading-form .heading-form-div .form-div
+{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+    border-radius: 25px;
+}
+
+/* -------------------------------------------------  BRAND SECTION ------------------------------------------ */
+
+.brand-section{
+    /* border: 2px solid red; */
+    min-height: 30vh;
+    background-color: #fdecff;
+    padding: 10vw 10vw;
+}
+
+.brand-section .brand-section-div .brand-img-section
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.brand-section .brand-section-div h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.brand-section .brand-section-div .brand-img-section{
+    gap: 10px;
+}
+
+.brand-section .brand-section-div .brand-img-section img{
+    height: 30px;
+}
+
+/* --------------------------------- WHATSAPP CHAT SECTION ---------------------------------------------- */
+
+.whatsapp-chat-section
+{
+    /* border: 2px solid red; */
+    padding: 10vw;
+}
+
+.whatsapp-chat-section .whatsapp-chat-div h1{
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.whatsapp-chat-section .whatsapp-chat-img
+{
+    gap: 50px;
+    /* border: 2px solid red; */
+    padding-left: none;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-chat-section .whatsapp-chat-img h2{
+    text-align: center;
+    font-size: 13px;
+    /* display: none; */
+}
+#whatsapp-chat-img1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#whatsapp-chat-img2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#whatsapp-chat-img3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#whatsapp-chat-img4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------------------------------------------- WHATSAPP BUSIINESS API -------------------------------------------------------------- */
+
+.whatsapp-business-api-section
+{
+    /* border: 2px solid green; */
+    padding: 10vw 10vw 5vw 10vw;
+}
+
+.whatsapp-business-api-section .whatsapp-business-api-div h1{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+}
+.whatsapp-business-api-section .whatsapp-business-api-div p{
+    font-size: 15px;
+    text-align: center;
+}
+
+.whatsapp-business-api-section .whatsapp-business-api-div span{
+    font-weight: 600;
+    font-size: 15px;
+}
+.whatsapp-business-api-section .whatsapp-business-api-div button{
+    font-size: 15px;
+}
+
+  }
+
+@media (min-width:501px) and (max-width:768px){
+ 
+      /* body{
+        border: 2px solid red;
+    } */
+
+    .bottom-bar__content {
+        padding: 10px 30px ;
+      }
+
+    .heading-form
+    {
+    padding: 10vw;
+    }
+
+
+    .heading-form .heading-form-div
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .heading-form .heading-form-div .form-div
+{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.brand-section .brand-section-div .brand-img-section img{
+    height: 70px;
+}
+
+.brand-section{
+    /* border: 2px solid red; */
+    min-height: 30vh;
+    background-color: #fdecff;
+    padding: 10vw 10vw;
+}
+
+.whatsapp-chat-section .whatsapp-chat-img
+{
+    padding-left: none;
+    padding: 0px -50px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+}
+
+
+@media (min-width:769px) and (max-width:1024px){
+    .bottom-bar__content {
+        padding: 10px 30px ;
+      }
+
+          body{
+        /* border: 2px solid red; */
+    }
+    .heading-form .heading-form-div
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+
+    .heading-form .heading-form-div .form-div
+    {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    .brand-section .brand-section-div .brand-img-section img{
+        height: 90px;
+    }
+
+    .whatsapp-chat-section .whatsapp-chat-img
+{
+    padding-left: none;
+    padding: 0px 0px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+}

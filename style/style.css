@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+  }
+  
+  /* BASE STYLES */
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #fff;
+}
+
+#main{
+    /* background-color: darkblue; */
+    position: relative;
+    z-index: 10;
+}
+
+/* NORMAL STYLES */
+.header {
+    /* position: fixed; */
+    width: 100%;
+  }
+  
+  .bottom-bar {
+    /* height: 80px; */
+
+
+    background: rgb(67,205,102);
+background: linear-gradient(180deg, rgba(67,205,102,1) 33%, rgba(255,255,255,1) 100%);
+  }
+  
+  .bottom-bar__content {
+    min-height: 80px;
+    max-width: 1200px;
+    padding: 5px ;
+    margin: 0 auto;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 500px; */
+  }
+  
+  .logo {
+    vertical-align: middle;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+  }
+  
+  .logo__img {
+    height: 32px;
+  }
+  
+  .nav {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav__list {
+    display: flex;
+    column-gap: 40px;
+  }
+/*   
+  .nav__item {
+    
+  } */
+  
+  .nav__link {
+    color: #222;
+    font-weight: 500;
+    font-size: 20px;
+    transition: all 0.3s;
+  }
+  
+  .nav__link:hover,
+  .nav__link:focus {
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  .btn {
+    color: #222;
+    border: 2px solid #222;
+    padding: 10px 20px;
+    border-radius: 100px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    transition: all 0.4s;
+  }
+  
+  .btn:hover {
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  
+  .hamburger {
+    cursor: pointer;
+    display: none;
+  }
+  
+  .bar {
+    height: 2.5px;
+    width: 27px;
+    background-color: #000;
+    margin: 5px 0;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* For JS */
+  .nav--open {
+    left: 50% !important;
+  }
+  
+  .hamburger--open .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  
+  .hamburger--open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger--open .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+  
+
+  
+  @media (max-width: 360px) {
+    .top-bar__content {
+      font-size: 10px;
+    }
+  }
+
+/* ------------------------------------------------------ HEADING FORM SECTION ------------------------------------------ */
+
+.heading-form
+{
+    /* border: 2px solid red; */
+    padding: 5vw 11vw;
+}
+
+.heading-form .heading-form-div
+{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.heading-form .heading-form-div .heading-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.heading-form .heading-form-div .heading-div h1{
+    font-size: 60px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #000;
+    line-height: 63px;
+}
+
+
+.heading-form .heading-form-div .heading-div h2
+{
+    font-size: 27.5px;
+    line-height: 29px;
+}
+
+.heading-form .heading-form-div .heading-div h3{
+    color: #43cd66;
+    font-size: 27px;
+}
+
+.heading-form .heading-form-div .form-div
+{
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* border: 2px solid red; */
+    width: 68%;
+    border-radius: 25px;
+}
+
+.heading-form .heading-form-div .form-div .form-checkbox
+{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.heading-form .heading-form-div .form-div .form-checkbox p{
+    color: #000;
+    font-weight: 600;
+    /* font-size: 2px; */
+}
+.form-checkbox input[type="checkbox"]{
+    width: 25px;
+    /* border: 0.25rem solid green; */
+}
+
+.heading-form .heading-form-div .form-div form
+{
+    
+    display: flex;
+    padding: 50px 45px 30px 45px;
+    gap: 25px;
+    flex-direction: column;
+}
+
+.heading-form .heading-form-div .form-div form input
+{
+    height: 40px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.heading-form .heading-form-div .form-div form input::placeholder{
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+}
+
+.heading-form .heading-form-div .form-div form input[type="submit"]{
+    background-color: #43cd66;
+    color: #fff;
+    height: 48px;
+    border-radius: 10px;
+    /* width: 250px; */
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+
+/* -------------------------------------------------  BRAND SECTION ------------------------------------------ */
+
+.brand-section{
+    /* border: 2px solid red; */
+    min-height: 30vh;
+    background-color: #fdecff;
+    padding: 5vw 11vw;
+}
+
+.brand-section .brand-section-div .brand-img-section
+{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.brand-section .brand-section-div h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+
+.brand-section .brand-section-div .brand-img-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.brand-section .brand-section-div .brand-img-section img{
+    height: 120px;
+}
+
+/* --------------------------------- WHATSAPP CHAT SECTION ---------------------------------------------- */
+
+.whatsapp-chat-section
+{
+    /* border: 2px solid red; */
+    width: 100%;
+    padding: 5vw 11vw;
+    background: rgba(67, 205, 102, 0.285);
+    background: linear-gradient(180deg, rgba(67, 205, 102, 0.285) 28%, rgba(255,255,255,1) 100%);
+    min-height: 100vh;
+}
+
+.whatsapp-chat-section .whatsapp-chat-div h1{
+    font-size: 55px;
+    font-weight: 500;
+    text-align: center;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 100px;
+    /* line-height: 60px; */
+}
+
+
+.whatsapp-chat-section .whatsapp-chat-img
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-left: 60px;    
+    flex-direction: row;
+    /* border: 2px solid red; */
+    gap: 50px;
+}
+
+.whatsapp-chat-section .whatsapp-chat-img h2{
+    width: 100%;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+/* ------------------------------------------- WHATSAPP BUSIINESS API -------------------------------------------------------------- */
+
+.whatsapp-business-api-section
+{
+    /* border: 2px solid green; */
+    padding: 2vw 10vw 5vw 10vw;
+}
+
+.whatsapp-business-api-section .whatsapp-business-api-div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.whatsapp-business-api-section .whatsapp-business-api-div h1{
+    font-size: 45px;
+    text-align: center;
+    font-weight: 500;
+}
+.whatsapp-business-api-section .whatsapp-business-api-div p{
+    font-size: 24px;
+    text-align: center;
+}
+
+.whatsapp-business-api-section .whatsapp-business-api-div span{
+    font-weight: 600;
+}
+
+.whatsapp-business-api-section .whatsapp-business-api-div button{
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: #43cd66;   
+}
+
+.gradient{
+    height: 100px;
+    background: rgb(67,205,102);
+    background: linear-gradient(0deg, rgba(67,205,102,1) 28%, rgba(255,255,255,1) 100%);
+}
